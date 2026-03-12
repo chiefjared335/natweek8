@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="check antwoord" HorizontalAlignment="Left" VerticalAlignment="Top" Background="LightGreen" Height="39" Width="172" Margin="10,193,0,0"/>
+        <Button Content="nieuwe som" HorizontalAlignment="Left" Margin="228,193,0,0" VerticalAlignment="Top" Background="LightBlue" Height="39" Width="172"/>
+        <TextBox HorizontalAlignment="Left" Height="17" Margin="504,204,0,0" TextWrapping="Wrap" Text="cijfer&#xD;&#xA;cijfer&#xD;&#xA;" VerticalAlignment="Top" Width="78"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="en-gb" Text="score"/><LineBreak/><Run Language="en-gb"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="329,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="134"><Run Language="en-gb" Text="vul een cijfer in"/><LineBreak/><Run Language="en-gb"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="314,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="135"><Run Language="en-gb" Text="som"/><LineBreak/><Run Language="en-gb"/></TextBlock>
 
     </Grid>
 </Window>
