@@ -5,14 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:natopdrachtweek8"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="500
+        ">
     <Grid>
-        <Button Content="check antwoord" HorizontalAlignment="Left" VerticalAlignment="Top" Background="LightGreen" Height="39" Width="172" Margin="10,193,0,0"/>
-        <Button Content="nieuwe som" HorizontalAlignment="Left" Margin="228,193,0,0" VerticalAlignment="Top" Background="LightBlue" Height="39" Width="172"/>
-        <TextBox HorizontalAlignment="Left" Height="17" Margin="504,204,0,0" TextWrapping="Wrap" Text="cijfer&#xD;&#xA;cijfer&#xD;&#xA;" VerticalAlignment="Top" Width="78"/>
-        <TextBlock HorizontalAlignment="Left" Margin="435,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="en-gb" Text="score"/><LineBreak/><Run Language="en-gb"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="329,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="134"><Run Language="en-gb" Text="vul een cijfer in"/><LineBreak/><Run Language="en-gb"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="314,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="135"><Run Language="en-gb" Text="som"/><LineBreak/><Run Language="en-gb"/></TextBlock>
+        <Border Background="White"
+                CornerRadius="20"
+                Padding="30"
+                Width="450"
+                VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock Text="het rekenspel"
+                               FontSize=" 40"
+                               FontWeight="Bold"
+                               Foreground="#ff6F08"
+                               HorizontalAlignment="Right"
+                               Margin="0,0,0,20"/>
+                <TextBlock x:Name="sum"
+                           FontSize="24"
+                           Height="50"
+                           Margin="0,0,0,15"
+                           HorizontalAlignment="Center" Width="317"
+                           Background="AliceBlue"/>
+                <Button x:Name="newMathButton"
+                        Content="nieuwe som"
+                        FontSize="10"
+                        Height="45"
+                        Background="Red"
+                        Foreground="White"
+                        Margin=" 0,0,0,10"
+                        Click="newMathButton_Click"/>
+            </StackPanel>
 
+
+        </Border>
     </Grid>
 </Window>
