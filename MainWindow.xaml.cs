@@ -59,5 +59,10 @@ namespace natopdrachtweek8
             {
                makeNewMath();
             }
+
+        private void checkAnswerButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
+    }
     }
