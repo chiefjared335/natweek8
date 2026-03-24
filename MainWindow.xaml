@@ -8,12 +8,18 @@
         Title="MainWindow" Height="500" Width="500
         ">
     <Grid>
-        <Border Background="White"
+        <Border Background="Aqua"
                 CornerRadius="20"
                 Padding="30"
                 Width="450"
                 VerticalAlignment="Center" Height="400" Margin="25,0,25,0">
             <StackPanel HorizontalAlignment="Center">
+                <TextBlock x:Name="scoreText"
+                 Text="Score: 0"
+                FontSize="20"
+                Margin="0,0,0,20"
+                HorizontalAlignment="Center"/>
+                
                 <TextBlock Text="het rekenspel"
                                FontSize=" 40"
                                FontWeight="Bold"
@@ -35,7 +41,7 @@
                         Margin=" 0,0,0,10"
                         Click="newMathButton_Click"/>
                 <TextBox x:Name="answerTextBox"
-                         FontSize="10"
+                         FontSize="24"
                          Height="45"
                          Background="AliceBlue"
                          Margin="0,0,0,10"
