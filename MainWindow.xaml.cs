@@ -12,7 +12,7 @@ namespace natopdrachtweek8
         int getal2;
         string math;
 
-        int score = 0; // ✅ score start op 0
+        int score = 0; 
 
         public MainWindow()
         {
@@ -35,7 +35,7 @@ namespace natopdrachtweek8
             {
                 math = "-";
 
-                // ✅ voorkom negatieve uitkomst
+
                 if (getal1 < getal2)
                 {
                     int temp = getal1;
@@ -51,19 +51,19 @@ namespace natopdrachtweek8
             {
                 math = "/";
 
-                // ✅ voorkom delen door 0
+
                 while (getal2 == 0)
                 {
                     getal2 = random.Next(1, 11);
                 }
 
-                // ✅ zorg dat uitkomst geen decimal is
+
                 getal1 = getal1 * getal2;
             }
 
             sum.Text = getal1 + " " + math + " " + getal2;
 
-            // reset kleur
+
             this.Background = Brushes.White;
         }
 
@@ -100,15 +100,15 @@ namespace natopdrachtweek8
             {
                 if (userAnswer == correctAnswer)
                 {
-                    score++; // ✅ +1 bij goed antwoord
+                    score++; 
                     scoreText.Text = "Score: " + score;
 
-                    // ✅ groen bij goed
+                    
                     this.Background = Brushes.LightGreen;
                 }
                 else
                 {
-                    // ❌ rood bij fout
+                    
                     this.Background = Brushes.IndianRed;
                 }
             }
